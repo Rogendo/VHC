@@ -1,0 +1,60 @@
+{% extends 'tracker/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="blog py-5">
+	<div class="container py-md-5 py-3">
+		<h3 class="heading text-center mb-sm-5 mb-4">{{ project.project_name }} Progress</h3>
+		<div class="row blog-grids">
+			
+			<div class="col-lg-5 mb-lg-0 mb-4">
+				<h5>March 3, 2019.</h5>
+				<h4 class="my-3">Description</h4>
+				<p class="my-3">{{ projectprogress.description }}</p>
+        <p>The project <b>{{project.project_name}}</b> was allocated to <b>{{project.company_name}}</b>. This Project Begins on <b>{{project.commencement_date}}</b> and is supposed 
+          to come to completion after a period of <b>{{project.contract_period_months}}</b> months. <br>
+            This project is overseen by the <b>{{project.procurrement_department}}</b>.<br><br>
+
+        
+          {% comment %} Square per meter rate or lm: KSh {{ project.sqm_rate_or_lm }} <br><br> {% endcomment %}
+          {% comment %} Site Location: {{ project.site_location }}<br><br> {% endcomment %}
+          Floor Area: {{ project.floor_area }}<br>
+          Contract Sum: Ksh {{ project.contract_sum }}<br>
+          Work Status: {{ project.work_status }}<br><br>
+                
+        </p>
+          <div class="property-info-list">
+            <div class="detail">
+                <h4 class="title">
+                    <a href="#">{{ project.site_location }}</a>
+                </h4>
+                <div class="location mt-2">
+                    <a href="#">
+                  <span class="fa fa-map-marker"></span>   {{ project.project_location }} / Kenya
+                </a>
+                </div>
+                <ul class="facilities-list clearfix">
+                    <li>
+                        <span class="fa fa-clock-o"></span> {{projectprogress.get_remaining_days}} days to project completion
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <div class="footer-properties">
+                <a class="admin" href="#">
+                <span class="fa fa-user"></span> {{project.company_name}}<br>
+            </a>
+                <span class="year text-right"> <span class="fa fa-calendar"></span> Start Date: {{projectprogress.start_date}}</span>
+
+            </div>
+        </div>
+			</div>
+			<div class="col-lg-7 blog-img2">
+        <img src="{{ projectprogress.main_image.url }}" alt="projectProgress" style="border-radius:5%;">
+				{% comment %} <a href="#"></a> {% endcomment %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
