@@ -9,7 +9,8 @@
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
     <script>
         addEventListener("load", function () {
@@ -22,10 +23,13 @@
     </script>
 	
 	<!-- css files -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 
-	
+	{% comment %} <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' /><!-- bootstrap css --> {% endcomment %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/> {% endcomment %}
+	{% comment %} <link href="{% static 'css/style.css '%} " rel='stylesheet' type='text/css' /><!-- custom css --> {% endcomment %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    {% comment %} <link href="{% static 'css/font-awesome.min.css' %} " rel="stylesheet"><!-- fontawesome css --> {% endcomment %}
 	<!-- //css files -->
 	
 	<!-- google fonts -->
@@ -48,7 +52,7 @@
 		<!-- nav -->
 		<nav class="d-lg-flex">
 
-			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<label for="drop" class="toggle"><img src="{% static 'images/menu.svg' %}"  height="24" width="24"></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-2 ml-auto">
 				<a href="{% url 'home' %}" >Projects</a>
@@ -2443,16 +2447,13 @@ a.move-top span{
 			</div>
 			<div class="col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-4">
 				<h4 class="mb-md-4 mb-3">Contact Info</h4>
-				<p><span class="fa mr-2 fa-map-marker"></span>Mbale Town, Vihiga County, Kenya.</span></p>
-				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span> 0800720378 </p>
-				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@vihiga.go.ke">info@vihiga.go.ke</a></p>
-				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:communications@vihiga.go.ke">communications@vihiga.go.ke</a></p>
-				<p><span class="fa mr-2 fa-inbox"></span>P.O.Box 344 – 50300</p>
+				<p><img src="{% static 'images/location.svg' %}" height="20" width="20"/>Mbale Town, Vihiga County, Kenya.</span></p>
+				<p><img src="{% static 'images/phone.svg' %}" height="20" width="20"/> 0800720378 </p>
+				<p><img src="{% static 'images/mail.svg' %}" height="20" width="20"/><a href="mailto:info@vihiga.go.ke">info@vihiga.go.ke</a></p>
+				<p><img src="{% static 'images/mail2.svg' %}" height="20" width="20"/><a href="mailto:communications@vihiga.go.ke">communications@vihiga.go.ke</a></p>
+				<p><img src="{% static 'images/mail1.svg' %}" height="20" width="20"/>P.O.Box 344 – 50300</p>
 
 			</div>
-
-			
-			
 			<div class="col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-4">
 				<h4 class="mb-md-4 mb-3">Quick Links</h4>
 				<ul>
@@ -2468,21 +2469,16 @@ a.move-top span{
 		</div>
 		<div class="icon-social mt-3 py-4 text-center">
 			<a href="https://facebook.com/vihigacountygov/" class="button-footr">
-				<span class="fa mx-2 fa-facebook "></span>
+				<img src="{% static 'images/fb.svg' %}" alt="Vihiga fb" height="24" width="24"/>
+
 			</a>
 			<a href="https://twitter.com/VihigaCountyGov/" class="button-footr">
-				<span class="fa mx-2 fa-twitter"></span>
+				<img src="{% static 'images/twt.svg' %}" alt="Vihiga fb" height="24" width="24"/>
+
 			</a>
 			<a href="https://vihiga.go.ke/" class="button-footr">
-				<span class="fa mx-2 fa-globe"></span>
+				<img src="{% static 'images/org.svg' %}" alt="Vihiga fb" height="24" width="24"/>
 			</a>
-			{% comment %} <a href="#" class="button-footr">
-				<span class="fa mx-2 fa-pinterest"></span>
-			</a>
-			<a href="#" class="button-footr">
-				<span class="fa mx-2 fa-google-plus"></span>
-			</a> {% endcomment %}
-
 		</div>
 	</div>
 </footer>
@@ -2501,7 +2497,7 @@ a.move-top span{
 <!-- move top -->
 <div class="move-top text-right">
 	<a href="#home" class="move-top"> 
-		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+		<img src="{% static 'images/up3.svg' %}"  height="28" width="28">
 	</a>
 </div>
 <!-- move top -->

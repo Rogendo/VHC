@@ -62,7 +62,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Admin Dashboard",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "jazzmin/img/default-log.svg",
+    "site_logo": "jazzmin/img/favicon.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": "jazzmin/img/favicon.png",
@@ -278,7 +278,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
