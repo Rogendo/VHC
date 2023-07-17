@@ -1,40 +1,132 @@
 {% extends 'tracker/base.html'%}
 {% block title %} Vihiga County {% endblock title %}
-<head>
-	{% load static %}
-	    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-	
-	<!-- css files -->
-	<link href="{% static 'css/css_slider.css'  %}" type="text/css" rel="stylesheet" media="all"> <!--slider css -->
+{% load static %}
 
-	<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' ><!-- bootstrap css -->
-
-        <link href="{% static 'style.css '%} " rel='stylesheet' type='text/css' ><!-- custom css -->
-        <link href="https://github.com/Rogendo/Rogendo/blob/main/style.css" rel="stylesheet" type='text/css'>
-        <link href="{% static 'css/font-awesome.min.css' %} " rel="stylesheet"><!-- fontawesome css -->
-	<!-- //css files -->
-	
-	<!-- google fonts -->
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
-	<!-- //google fonts -->
-	
-	</head>
-
-	
-</head>
 
 {% block content %}
 
+<style>
+	
+/*-- banner --*/
+.banner {
+	background: #fff;
+}
 
+.layer1 {
+    background: rgba(0, 0, 0, 0.4);
+}
+.banner-text-agile {
+    padding: 11vw 0 5vw;
+    box-sizing: border-box;
+	opacity:1;
+}
+
+h3.b-w3ltxt span {
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 1px;
+    color: #353c4e;
+}
+h3.b-w3ltxt {
+    font-size: 4em;
+    color: #353c4e;
+    font-weight: 800;
+    line-height: 75px;
+    padding-top: 1em;
+}
+
+.carousel-item p {
+    color: #777;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.btn-banner,.btn-banner1 {
+    background: #00bcd5;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+     display: inline-block;
+}
+.btn-banner1 {
+    background: #ed948e;
+}
+
+.btn-banner:hover,.btn-banner1:hover{
+    color: #fff;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -53px;
+    margin-left: 0;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.carousel-indicators li.active {
+    cursor: pointer;
+	background: #00bcd4;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #333;
+    cursor: pointer;
+}
+/*-- //banner --*/
+	
+/*-- projects page --*/
+
+.projects {
+	background: #f8f9fa;
+}
+
+
+/*-- //projects page --*/
+	
+/*-- appointment --*/
+
+.appointment{
+	background: #00bcd5;
+}
+.appointment h4  {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.appointment p{
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.appointment a {
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 30px;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+
+/*-- //appointment --*/
+	
+
+</style>
 
 <!-- banner -->
 <div class="banner" id="home">
