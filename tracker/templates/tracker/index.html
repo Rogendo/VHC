@@ -203,7 +203,7 @@ p.font-italic {
 							<li>
 								<div class="container-fluid">
 									<div class="w3ls_banner_txt">
-										<h3 class="b-w3ltxt text-capitalize mt-md-4"><span>Vihiga County  </span>Project Tracker.</h3>
+										<h3 class="b-w3ltxt text-capitalize mt-md-4"><span>Vihiga County  </span>Project Implementation Tracker.</h3>
 										<p class="w3ls_pvt-title my-3">Efficient, Accountable and Transparent Project Management System. 
                                             <br>Sign Up as an admin</p>
 																			
@@ -333,6 +333,8 @@ p.font-italic {
 			</div>
 		</div>
 	</div>
+	
+
 </section>
 <!-- //testimonials -->
 
@@ -345,5 +347,39 @@ p.font-italic {
 		<a href="mailto:info@vihiga.go.ke">info@vihiga.go.ke</a>
 	</div>
 </section>
+
+<section>
+	<div id="carouselExampleIndicators" class="carousel slide">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img  src="{% static 'images/quote.svg' %}" height="20" width="20" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="{% static 'images/governor.jpg' %}" height="20" width="20" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="{% static 'images/f.png' %}" height="20" width="20" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	  
+
+	  <script>
+		$('.carousel').carousel()
+	  </script>
+	</section>
 <!-- //appointment -->
 {% endblock %}
