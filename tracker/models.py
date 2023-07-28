@@ -49,11 +49,6 @@ class Contractor(models.Model):
 
     def __str__(self):
         return self.company_name
-    class Meta:
-        # db_table = 'Tables'
-        # change model name in admin
-        verbose_name = "6 Contractor"
-
 
 class Procurement_Department(models.Model):
     department_name = models.CharField(max_length=100,unique=True)
@@ -65,7 +60,7 @@ class Procurement_Department(models.Model):
     class Meta:
         # db_table = 'Tables'
         # change model name in admin
-        verbose_name = "5 Department"
+        verbose_name = "Department"
 
 class Project(models.Model):    
     STARTED = 'Started'
@@ -111,11 +106,9 @@ class Project(models.Model):
         
     class Meta:
         ordering = ['-updated_on']
-        verbose_name = "1 Project"
-
+    
     def __str__(self):
         return self.project_name
-    
    
 class Checklist(models.Model):
     checklist_name = models.CharField(max_length=80,unique=True)
@@ -123,17 +116,6 @@ class Checklist(models.Model):
     procurrement_department = models.ForeignKey(Procurement_Department,on_delete=models.CASCADE,related_name="procuring_dpt")
     main_contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE,related_name="contractor")
     checklist_document = models.FileField(upload_to='Checklist_Documents/')
-    checklist_document_1 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    checklist_document_2 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    checklist_document_3 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    checklist_document_4 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    checklist_document_5 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    # checklist_document_6 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    # checklist_document_7 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    # checklist_document_8 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    # checklist_document_9 = models.FileField(upload_to='Checklist_Documents/',null=True,blank=True)
-    # checklist_document_10 = models.FileField(upload_to='Checklist_Documents/,null=True,blank=True)
-
     contract_period_months = models.PositiveIntegerField()
     date = models.DateField()
 
@@ -151,7 +133,6 @@ class Checklist(models.Model):
         
     class Meta:
         ordering = ['-date']
-        verbose_name = "2 Checklist"
     
     def __str__(self):
         return self.checklist_name
@@ -296,8 +277,8 @@ class ProjectProgress(models.Model):
     class Meta:
 
         # change model name in admin
-        verbose_name = "3 Project Progres"
-        verbose_name_plural = "3 Project Progress"
+        verbose_name = "Project Progres"
+        verbose_name_plural = "Project Progress"
 
 class ProjectDeliveryAcceptanceTeam(models.Model):
     APPROVED= 'Approved'
@@ -318,5 +299,5 @@ class ProjectDeliveryAcceptanceTeam(models.Model):
     class Meta:
     # db_table = 'Tables'
     # change model name in admin
-        verbose_name = "4 Project Acceptance"
-        verbose_name_plural = "4 Project Acceptance"
+        verbose_name = "Project Acceptance"
+        verbose_name_plural = "Project Acceptance"
