@@ -1,9 +1,3 @@
-from django.db import models
-from django.contrib.auth.models import AbstractUser
-from django.urls import reverse
-from django.utils.html import format_html
-
-
 # import the required libraries
 from django.db import models
 from django.contrib.auth.models import AbstractUser,Group,Permission
@@ -16,19 +10,6 @@ from django.urls import reverse
 from django.views.generic import *
 from datetime import date
 from django.db import models
-# from django.contrib.auth.models import AbstractUser,UserManager
-
-
-# class CustomUserManager(UserManager):
-#     pass
-# class CustomUser(AbstractUser):
-#     email=models.EmailField(unique=True)
-#     USERNAME_FIELD='username'
-#     REQUIRED_FIELDS = ['email']
-
-#     objects = CustomUserManager
-
-
 
 class Contractor(models.Model):
     company_name = models.CharField(max_length=100,unique=True)
