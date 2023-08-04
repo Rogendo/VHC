@@ -23,16 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)1z8c-90uqp4%peeftnm_*le0)(5k5d)@r8rz5fa6c^n&s)iv*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://vhc-project-tracker-production.up.railway.app',
+    'https://vhc-production.up.railway.app',
     # Add any other trusted origins here
 ]
 
-CSRF_TRUSTED_ORIGINS=['https://vhc-project-tracker-production.up.railway.app',
+CSRF_TRUSTED_ORIGINS=['https://vhc-production.up.railway.app',
+
                      ]
 
 # Application definition
