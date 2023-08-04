@@ -1,7 +1,8 @@
 {% extends 'tracker/base.html'%}
 {% block title %} Vihiga County {% endblock title %}
-
 {% load static %}
+   
+
 {% block content %}
 
 <style>
@@ -335,6 +336,74 @@ p.font-italic {
 	</div>
 </section>
 <!-- //testimonials -->
+<!--COMMMENTS -->
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+<section>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+      	<div class="col-sm">
+        	<div class="card" style="width: 18rem;">
+        		<img class="card-img-top" src="{% static 'images/governor.jpg' %}"  alt="Los Angeles" alt="Card image cap">
+        			<div class="card-body">
+          				<h5 class="card-title">Albert Mugala</h5>
+          				<p class="card-text">COngratulations Muchapa Kazi Kusema Nakutenda 🙏🙏</p>
+          				<a href="https://www.facebook.com/vihigacountygov" class="btn btn-primary">View in facebook</a>
+              		</div>
+          	</div>
+        </div>
+        
+        
+        <div class="col-sm">
+        	<div class="card" style="width: 18rem;">
+        		<img class="card-img-top" src="{% static 'images/dpgovernor.jpg' %}" alt="Los Angeles" alt="Card image cap">
+        			<div class="card-body">
+          				<h5 class="card-title">Card title</h5>
+          				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          				<a href="#" class="btn btn-primary">Go somewhere</a>
+              		</div>
+          	</div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="{% static 'images/governor.jpg' %}" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/dpgovernor.jpg' %}" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</section>
+
+
+
 <!-- appointment -->
 <section class="appointment align-center py-5">
 	<div class="container py-sm-3">
