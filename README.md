@@ -2,7 +2,7 @@
 
 <p align="center"><img src="logo.png" /></p>
 
-<h1 align="center">County Construction Project Information Management System</h1>
+<h1 align="center">County Project Management System</h1>
 
 <p align="center"> Intro - welcome to ***** County Information Management System </p>
 
