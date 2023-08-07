@@ -49,7 +49,7 @@ h3.b-w3ltxt {
     font-size: 16px;
     letter-spacing: 1px;
     padding: 10px 25px;
-     display: inline-block;
+    display: inline-block;
 }
 .btn-banner1 {
     background: #ed948e;
@@ -182,6 +182,9 @@ p.font-italic {
     border: 2px solid #fff;
     margin-top: 20px;
 }
+.row{
+    padding: 10px 25px;
+}
 
 /*-- //appointment --*/
 	
@@ -261,34 +264,33 @@ p.font-italic {
 
 <!-- testimonials -->
 <section class="feedback" id="testimonials">
-	<div class="feedback-layer py-5">
-	    <div class="container py-lg-5">
-		<h3 class="heading text-center mb-sm-5 mb-4">Testimonials</h3>
+<div class="feedback-layer py-5">
+    <div class="container py-lg-5">
+        <h3 class="heading text-center mb-sm-5 mb-4">Testimonials</h3>
+    </div>
+    <div class="row">
+	<div class="col-sm">
+	    <div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="{% static 'images/proj1.jpg' %}"  alt="project" alt="Card image cap">
+		    <div class="card-body">
+			<h5 class="card-title">Albert Mugala</h5>
+			<p class="card-text">COngratulations Muchapa Kazi Kusema Nakutenda 🙏🙏</p>
+			<a href="https://www.facebook.com/vihigacountygov" class="btn btn-primary">View in facebook</a>
+		    </div>
+	      </div>
+	 </div>
+
+	<div class="col-sm">
+	    <div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="{% static 'images/proj2.jpg' %}" alt="project" alt="project">
+		    <div class="card-body">
+			<h5 class="card-title">Card title</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		    </div>
 	    </div>
-  <div class="row">
-      	<div class="col-sm">
-        	<div class="card" style="width: 18rem;">
-        		<img class="card-img-top" src="{% static 'images/proj1.jpg' %}"  alt="project" alt="Card image cap">
-        			<div class="card-body">
-          				<h5 class="card-title">Albert Mugala</h5>
-          				<p class="card-text">COngratulations Muchapa Kazi Kusema Nakutenda 🙏🙏</p>
-          				<a href="https://www.facebook.com/vihigacountygov" class="btn btn-primary">View in facebook</a>
-              			</div>
-          	</div>
-        </div>
-        
-        
-        <div class="col-sm">
-        	<div class="card" style="width: 18rem;">
-        		<img class="card-img-top" src="{% static 'images/proj2.jpg' %}" alt="project" alt="project">
-        			<div class="card-body">
-          				<h5 class="card-title">Card title</h5>
-          				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          				<a href="#" class="btn btn-primary">Go somewhere</a>
-              			</div>
-          	</div>
 	</div>
-        
+	        
       </div>
 
 			<!-- testimonials rename to agenda then the slides shouw should be the testimonials-->
