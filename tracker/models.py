@@ -33,7 +33,7 @@ class Contractor(models.Model):
     class Meta:
         # db_table = 'Tables'
         # change model name in admin
-        verbose_name = "6 Contractor"
+        verbose_name = "Contractor"
 
 
 class Procurement_Department(models.Model):
@@ -46,7 +46,7 @@ class Procurement_Department(models.Model):
     class Meta:
         # db_table = 'Tables'
         # change model name in admin
-        verbose_name = "5 Department"
+        verbose_name = "Department"
 
 class Project(models.Model):    
     STARTED = 'Started'
@@ -92,7 +92,7 @@ class Project(models.Model):
         
     class Meta:
         ordering = ['-updated_on']
-        verbose_name = "1 Project"
+        verbose_name = "Project"
 
     def __str__(self):
         return self.project_name
@@ -132,7 +132,7 @@ class Checklist(models.Model):
         
     class Meta:
         ordering = ['-date']
-        verbose_name = "2 Checklist"
+        verbose_name = "Checklist"
     
     def __str__(self):
         return self.checklist_name
@@ -277,8 +277,8 @@ class ProjectProgress(models.Model):
     class Meta:
 
         # change model name in admin
-        verbose_name = "3 Project Progres"
-        verbose_name_plural = "3 Project Progress"
+        verbose_name = "Project Progres"
+        verbose_name_plural = "Project Progress"
 
 class ProjectDeliveryAcceptanceTeam(models.Model):
     APPROVED= 'Approved'
@@ -299,5 +299,5 @@ class ProjectDeliveryAcceptanceTeam(models.Model):
     class Meta:
     # db_table = 'Tables'
     # change model name in admin
-        verbose_name = "4 Project Acceptance"
-        verbose_name_plural = "4 Project Acceptance"
+        verbose_name = "Project Acceptance"
+        verbose_name_plural = "Project Acceptance"
