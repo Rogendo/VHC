@@ -71,10 +71,22 @@ class ProjectProgressAdmin(admin.ModelAdmin):
 class Procurement_DepartmentAdmin(admin.ModelAdmin):
     list_display = ('department_name','created')
 
+#admin.site.unregister(Model1)
+#admin.site.unregister(Model2)
+#admin.site.unregister(Model3)
+
+# Re-register the models in the desired order
+#admin.site.register(Model3)
+#admin.site.register(Model1)
+#admin.site.register(Model2)
+
 # main admin
-admin.site.register(Contractor,ContractorAdmin)
+
 admin.site.register(Project,ProjectAdmin)
-admin.site.register(Checklist,ChecklistAdmin)
-admin.site.register( Procurement_Department,Procurement_DepartmentAdmin)
 admin.site.register(ProjectProgress,ProjectProgressAdmin)
+admin.site.register( Procurement_Department,Procurement_DepartmentAdmin)
+admin.site.register(Contractor,ContractorAdmin)
+admin.site.register(Checklist,ChecklistAdmin)
+
+
 admin.site.register(ProjectDeliveryAcceptanceTeam,ProjectDeliveryTeamAdmin)
