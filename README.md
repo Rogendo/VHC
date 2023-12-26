@@ -1,10 +1,9 @@
 
 
-<p align="center"><img src="logo.png" /></p>
 
 <h1 align="center">County Project Management System</h1>
 
-<p align="center"> Intro - welcome to ***** County Information Management System </p>
+<p align="center"> Intro - welcome to Vihiga County Information Management System </p>
 
 <hr/>
 
